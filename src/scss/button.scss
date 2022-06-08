@@ -1,0 +1,7 @@
+@use "variables.scss" as v;
+.btn{
+    &-dark__yellow{
+        background-color: #f3ca20;
+        color: #000000;
+    }
+}

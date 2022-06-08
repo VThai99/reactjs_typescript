@@ -1,0 +1,121 @@
+@use "variables.scss" as v;
+.form-login {
+  font-family: "Roboto", sans-serif;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%);
+  color: v.$blue-83;
+  background-color: v.$green-9D;
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  border-radius: 10px;
+  padding: 40px;
+  &__nameForm{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 3px #5c5b87;
+  }
+  &__button {
+    width: 100%;
+    box-shadow: 0px 0px 10px v.$blue-83;
+    transition: all ease-out 0.25s;
+    &:focus {
+      box-shadow: 0px 0px 10px v.$blue-83;
+      &:active {
+        box-shadow: 0 0 20px 1rem rgb(49 132 253 / 50%);
+      }
+    }
+  }
+  &__tittle {
+    font-size: 20px;
+  }
+  &__info {
+    transition: all linear 0.5s;
+    &:focus {
+      box-shadow: 0px 0px 14px 7px rgb(13 110 253 / 25%);
+    }
+  }
+  &__ques{
+    text-align: center;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+}
+.form-signup {
+  font-family: "Roboto", sans-serif;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-style: preserve-3d ;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%)  rotateY(180deg);
+  color: v.$yellow-154;
+  background-color: v.$gray-3d;
+  box-shadow: 12px 12px 16px 0 rgb(0 0 0 / 25%),
+    -8px -8px 12px 0 rgb(255 255 255 / 30%);
+  border-radius: 10px;
+  padding: 40px;
+  &__nameForm{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 3px black;
+  }
+  &__button {
+    width: 100%;
+    box-shadow: 0px 0px 10px v.$gray-3d;
+    transition: all ease-out 0.25s;
+    &:focus {
+      box-shadow: 0px 0px 10px v.$yellow-154;
+      &:active {
+        box-shadow: 0 0 20px 1rem rgba(43, 92, 73, 0.5);
+      }
+    }
+  }
+  &__tittle {
+    font-size: 20px;
+  }
+  &__info {
+    transition: all linear 0.5s;
+    &:focus {
+      box-shadow: 0px 0px 14px 7px rgb(13 110 253 / 25%);
+    }
+  }
+  &__ques{
+    text-align: center;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+  }
+}
+.card-3d-wrap {
+  position: absolute;
+  /* width: 100vw; */
+  left: 50%;
+  top: 50%;
+  /* height: 100vh; */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card-3d-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out;
+}
+.isRotage{
+    transform: rotateY(180deg);
+  }
