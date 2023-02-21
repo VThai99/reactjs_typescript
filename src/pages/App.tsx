@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../components/button/Button';
-import Login from './login/Login';
+import Login from './LoginAndSignUp/LoginAndSignUp';
 import '../scss/style.scss';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import DefaultLayout from '../layout/DefaultLayout';
